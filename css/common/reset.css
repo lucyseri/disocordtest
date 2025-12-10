@@ -1,0 +1,52 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+KR:wght@100..900&display=swap');
+:root{
+  --main-color: #5765F2;
+  --back-color: #EBEDEE;
+  --txt1-color: #060606;
+  --txt2-color: #4E5258;
+  --txt3-color: #77808F;
+  --alarm-color: #DA383A;
+  --active-color: #3BA45C;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  color: var(--txt1-color);
+  box-sizing: border-box;
+}
+a{
+  display: block;
+  text-decoration: none;
+}
+ul, li{
+  list-style: none;
+}
+html{
+  font-size: 10px;
+}
+/* IR */
+.ir_pm{
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+.ir_wa{
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.ir_su{
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -99999px;
+}
