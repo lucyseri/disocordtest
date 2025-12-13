@@ -1,8 +1,69 @@
-#nav-inclide{
+#tabBar-include{
   width: 100%;
   height: 74px;
   position: fixed;
   bottom: 0;
   left: 0;
   background-color: #F2F4F5;
+  border-top: #ddd;
+  z-index: 10;
+}
+#tabBar-include ul{
+  display: flex;
+  width: 100%;
+  height: 73px;
+}
+#tabBar-include ul li{
+  flex: 1;
+  height: inherit;
+  opacity: 0.28;
+}
+#tabBar-include ul li.active{
+  opacity: 1;
+}
+#tabBar-include ul li a{
+  display: flex;
+  width: 100%;
+  height: inherit;
+  align-items: center;
+  gap: 4px;
+  flex-direction: column;
+  padding: 12px 0 0;
+}
+#tabBar-include ul li a span.menu-img{
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+#tabBar-include ul li:nth-child(1) a span.menu-img{
+  background: url("../../img/home.svg") no-repeat center / cover;
+}
+#tabBar-include ul li:nth-child(2) a span.menu-img{
+  background: url("../../img/notice.svg") no-repeat center / cover;
+}
+#tabBar-include ul li:nth-child(3) a span.menu-img{
+  background-color: #222;
+  border-radius: 50%;
+}
+#tabBar-include ul li.alarm a span.menu-img span.state{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #F2F4F5;
+  background-color: var(--alarm-color);
+  position: absolute;
+  bottom: -2px;
+  right: -10px;
+  font-size: 0.9rem;
+  color: #fff;
+  text-align: center;
+  line-height: 14px;
+}
+#tabBar-include ul li a span.menu-txt{
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
 }

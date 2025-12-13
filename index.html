@@ -1,29 +1,18 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Discord</title>
   <!-- script -->
   <script src="js/jquery-3.7.1.min.js"></script>
-  <script src="js/jq_common.js" defer></script>
   <script src="js/js_index.js" defer></script>
   <!-- style -->
   <link rel="stylesheet" href="css/pages/index.css">
 </head>
 <body>
   <div id="wrap">
-    <header>
-      <nav>
-        <ul>
-          <li class="active"><a href="#"><span class="ir_wa">messages</span></a></li>
-          <li class="alarm"><a href="#"><span class="ir_wa">profile</span></a></li>
-          <li><a href="#"><span class="ir_wa">pluse</span></a></li>
-          <li><a href="#"><span class="ir_wa">pluse</span></a></li>
-        </ul>
-        <div class="quick-menu"><img src="img/chat-plus.svg" alt="more chat"></div>
-      </nav>
-    </header>
+    <div id="header-include"></div>
     <main>
       <section class="title">
         <h1>Messages</h1>
@@ -35,32 +24,61 @@
       <section class="fiexd-thum">
         <h2>fiexed thum</h2>
         <ul>
+          <li class="active">
+            <a href="#">
+              <span class="profile-img">
+                <img src="img/profile1.png" alt="profile1">
+                <span class="badge"><span class="badge-inner"></span></span>
+              </span>
+            </a>
+          </li>
           <li>
             <a href="#">
-              <img src="" alt="">
+              <span class="profile-img">
+                <img src="img/profile2.png" alt="profile2">
+                <span class="badge"><span class="badge-inner"></span></span>
+              </span>
             </a>
           </li>
         </ul>
       </section>
-      <section class="list">
+      <section class="message-list">
         <h2>friends list</h2>
         <ul>
           <li>
             <a href="#">
-              <div class="friend-info">
-                <img src="" alt="">
-                <span>
-                  <span class="name"></span>
-                  <span class="state"></span>
+              <div class="friends-info">
+                <span class="thum">
+                  <img src="img/profile2.png" alt="profile2">
+                  <span class="badge"><span class="badge-inner"></span></span>
+                </span>
+                <span class="name">
+                  <strong>Oliver!</strong>
                 </span>
               </div>
-              <span class="time"></span>
+              <span class="time">1m</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="#">
+              <div class="friends-info">
+                <span class="thum">
+                  <img src="img/profile1.png" alt="profile1">
+                  <span class="badge"><span class="badge-inner"></span></span>
+                </span>
+                <span class="name">
+                  <strong>Alex</strong>
+                  Call Ended
+                </span>
+              </div>
+              <span class="time">23m</span>
             </a>
           </li>
         </ul>
       </section>
     </main>
+    <div class="quick-menu"><img src="img/chat-plus.svg" alt="more chat"></div>
     <div id="tabBar-include"></div>
-  </div>
+    </div>
 </body>
 </html>

@@ -1,3 +1,227 @@
 body{
   background-color: var(--back-color);
 }
+/* main */
+main{
+  background-color: #fff;
+  width: calc(100% - 16px - 57px);
+  min-height: 100vh;
+  position: fixed;
+  top: 56px;
+  right: 0;
+  border-top-left-radius: 25px;
+  padding: 16px;
+  overflow-y: scroll;
+}
+/* main section title */
+section.title h1{
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+}
+section.title ul{
+  margin: 10px 0 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+}
+section.title ul li:nth-child(1){
+  flex: 0 0 30px;
+  height: 30px;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  background-color: #fff;
+}
+section.title ul li:nth-child(2){
+  flex: 0 1 calc(100% - 8px - 30px);
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+}
+section.title ul li:nth-child(1) a{
+  width: 100%;
+  height: inherit;
+  padding: 4px;
+  background: url('../../img/search.svg') no-repeat center / auto;
+  background-clip: padding-box;
+}
+section.title ul li:nth-child(2) a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  padding: 4px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  color: var(--txt2-color);
+}
+section.title ul li:nth-child(2) a span.icon{
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url('../../img/20x20.svg') no-repeat -20px top / auto;
+}
+/* main section fiexd-thum */
+section.fiexd-thum h2{
+  display: none;
+}
+section.fiexd-thum ul{
+  display: flex;
+  gap: 8px;
+}
+section.fiexd-thum ul li{
+  flex: 0 1 84px;
+  height: 84px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+}
+section.fiexd-thum ul li a{
+  width: 100%;
+  height: 82px;
+}
+section.fiexd-thum ul li a span.profile-img{
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 17px auto 0;
+  position: relative;
+}
+section.fiexd-thum ul li a span.profile-img img{
+  display: block;
+  width: 100%;
+  height: inherit;
+  border-radius: 50%;
+  position: absolute;
+}
+section.fiexd-thum ul li a span.profile-img span.badge{
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid #fff;
+  background-color: var(--txt3-color);
+}
+section.fiexd-thum ul li a span.profile-img span.badge span.badge-inner{
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin: 3px auto;
+  border-radius: 50%;
+  background-color: #fff;
+}
+section.fiexd-thum ul li.active a span.profile-img span.badge{
+  background-color: var(--active-color);
+}
+section.fiexd-thum ul li.active a span.profile-img span.badge span.badge-inner{
+  background-color: var(--active-color);
+}
+/* main section message-list */
+section.message-list{
+  margin: 8px 0;
+}
+section.message-list h2{
+  display: none;
+}
+section.message-list ul{}
+section.message-list ul li{
+  width: 100%;
+  height: 52px;
+  border-radius: 12px;
+}
+section.message-list ul li:first-child{
+  background-color: #f6f6f6;
+  border: 1px solid #ebebeb;
+}
+section.message-list ul li a{
+  display: flex;
+  width: 100%;
+  height: inherit;
+  padding: 10px 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+section.message-list ul li a .friends-info{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+section.message-list ul li a .friends-info span.thum{
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+section.message-list ul li a .friends-info span.thum img{
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+  height: inherit;
+  position: absolute;
+}
+section.message-list ul li a .friends-info span.thum span.badge{
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #fff;
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  border-radius: 50%;
+  background-color: var(--txt3-color);
+}
+section.message-list ul li:first-child a .friends-info span.thum span.badge{
+  border: 2px solid #f6f6f6 !important;
+}
+section.message-list ul li a .friends-info span.thum span.badge span.badge-inner{
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin: 3px auto;
+  background-color: #fff;
+}
+section.message-list ul li.active a .friends-info span.thum span.badge{
+  background-color: var(--active-color);
+}
+section.message-list ul li.active a .friends-info span.thum span.badge span.badge-inner{
+  background-color: var(--active-color);
+}
+section.message-list ul li a .friends-info span.name{
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
+section.message-list ul li a .friends-info span.name strong{
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 2%;
+}
+section.message-list ul li a span.time{
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--txt3-color);
+}
+section.message-list ul li:first-child a span.time{
+  color: var(--txt1-color);
+}
+/* quick menu */
+.quick-menu{
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 90px;
+  right: 16px;
+  z-index: 10;
+  background-color: var(--main-color);
+}
+.quick-menu img{
+  position: absolute;
+  top: 16px;
+  left: 17px;
+}
