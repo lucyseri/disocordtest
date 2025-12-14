@@ -9,7 +9,7 @@ main{
   right: 0;
   top: 56px;
   width: calc(100% - 16px - 57px);
-  min-height: 100vh;
+  height: calc(100vh - 56px - 75px);
   overflow-y: scroll;
 }
 main #back-img{
@@ -17,6 +17,9 @@ main #back-img{
   height: 118px;
   overflow: hidden;
   border-top-left-radius: 25px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 main #back-img img{
   display: block;
@@ -28,6 +31,10 @@ main #back-img img{
 section.title{
   padding: 16px;
   border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 118px;
+  z-index: 10;
+  background-color: #fff;
 }
 section.title h1 a{
   font-size: 1.6rem;
@@ -104,4 +111,118 @@ section.title .btn-box a.schedule-btn{
   flex: 0 0 30px;
   background: url('../../img/30x30.svg') no-repeat -30px top / auto;
 }
+/* section */
+section.server-guide, section.onboarding, section.general-discussion{
+  padding: 8px 0 16px;
+}
+section h2{
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  color: var(--txt2-color);
+  padding: 0 16px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+section h2 span.icon{
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url('../../img/home-icon.svg') no-repeat left top / auto;
+}
+section h2 span.down-arrow{
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url('../../img/chevron-down.svg') no-repeat center / 100%;
+}
+section h2.toggle-menu span.down-arrow{
+  transform: scaleY(-1);
+}
+section ul.toggle-menu{
+  display: none;
+}
+section ul li a{
+  width: 100%;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+}
+section ul li.add-dot a span.dot{
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--txt1-color);
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+section ul li a span.txt{
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  color: var(--txt3-color);
+}
+section ul li.add-dot a span.txt{
+  color: var(--txt1-color);
+}
+section ul li a span.txt span.icon{
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url('../../img/home-icon.svg') no-repeat left -60px / auto;
+}
+section ul li a span.badge{
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+}
+section ul li a span.badge.new{
+  display: block;
+  border-radius: 8px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 18px;
+  padding: 0 5px;
+  font-weight: 600;
+}
+section ul li a span.badge.num{
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: var(--alarm-color);
+  font-size: 0.9rem;
+  letter-spacing: 0.4px;
+  text-align: center;
+  line-height: 18px;
+}
 /* main server gide */
+section.server-guide ul li:nth-child(1) span.txt span.icon{
+  background: url('../../img/home-icon.svg') no-repeat -20px -20px / auto;
+}
+section.server-guide ul li:nth-child(3) span.txt span.icon{
+  background: url('../../img/home-icon.svg') no-repeat -20px -40px / auto;
+}
+/* main onboarding */
+section.onboarding ul li:nth-child(1) span.txt span.icon{
+  background: url('../../img/home-icon.svg') no-repeat -20px -80px / auto;
+}
+section.onboarding ul li:nth-child(4) span.txt span.icon{
+  background: url('../../img/home-icon.svg') no-repeat -20px -60px / auto;
+}
+/* main general-discussion */
+section.general-discussion ul li:nth-child(2) span.txt span.icon{
+  background: url('../../img/home-icon.svg') no-repeat -20px -80px / auto;
+}
