@@ -1,0 +1,129 @@
+body{
+  background-color: #fff;
+}
+#wrap{
+  width: 100%;
+  height: calc(100vh - 56px - 75px);
+  position: fixed;
+  top: 56px;
+  left: 0;
+  overflow-y: scroll;
+}
+/* header */
+header{
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+}
+header h1{
+  font-size: 1.8rem;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+}
+header a.more-btn{
+  width: 30px;
+  height: 30px;
+  background: url('../../img/30x30.svg') no-repeat -30px -30px / auto;
+}
+/* main */
+main{
+  padding: 0 16px;
+}
+main section{
+  margin: 16px 0;
+}
+main section h2{
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: -0.4px;
+  color: var(--txt3-color);
+}
+main section ul{
+  margin: 12px 0;
+}
+main section ul li{
+  margin-bottom: 20px;
+}
+main section ul li a.list-box{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+main section ul li a.list-box .contents{
+  display: flex;
+  gap: 16px;
+}
+main section ul li a.list-box .contents img{
+  display: block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+main section ul li a.list-box .contents .txt-box{
+  flex: 0 1 240px;
+}
+main section ul li a.list-box .contents .txt-box span{
+  display: block;
+}
+main section ul li a.list-box .contents .txt-box span.main-txt{
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  margin-bottom: 4px;
+}
+main section ul li.sub-txt a.list-box .contents .txt-box span.sub-txt{
+  position: relative;
+  padding-left: 12px;
+}
+main section ul li.sub-txt.sub-txt a.list-box .contents .txt-box span.sub-txt::before{
+  content: '';
+  width: 3px;
+  height: 100%;
+  border-radius: 3px;
+  background-color: var(--border-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main section ul li.sub-txt a.list-box .contents .txt-box span.sub-txt span.tag-con{
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: -0.13px;
+  margin-bottom: 16px;
+}
+main section ul li.sub-txt a.list-box .contents .txt-box span.sub-txt span.event-con{
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: -0.13px;
+}
+main section ul li.sub-txt a.list-box .contents .txt-box span.sub-txt span.event-con strong{
+  display: block;
+  font-weight: 500;
+}
+main section ul li a.list-box .contents .txt-box span.send-btn{
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  padding: 8px 20px;
+  font-size: 1.4rem;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  margin-top: 10px;
+}
+main section ul li a.list-box span.time{
+  flex: 0 1 auto;
+  margin: 4px 0;
+  font-size: 1.2rem;
+  color: var(--txt2-color);
+  font-weight: 400;
+  letter-spacing: -0.6px;
+  font-family: "Figtree", sans-serif;
+}

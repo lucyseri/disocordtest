@@ -5,7 +5,7 @@ body{
 main{
   background-color: #fff;
   width: calc(100% - 16px - 57px);
-  min-height: 100vh;
+  min-height: calc(100vh - 56px - 75px);
   position: fixed;
   top: 56px;
   right: 0;
