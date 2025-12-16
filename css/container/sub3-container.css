@@ -1,0 +1,315 @@
+body{
+  background-color: var(--back-color);
+}
+/* header */
+header{
+  display: flex;
+  justify-content: right;
+  gap: 8px;
+  width: 100%;
+  height: 130px;
+  background: linear-gradient(#EAE9ED 10%, #E14F9E 90%);
+  padding: 0 16px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+header a{
+  margin-top: 60px;
+}
+header a.home-btn{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000000a4;
+}
+header a.home-btn span.back{
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin:  5px auto;
+  background: url('../../img/20x20.svg') no-repeat -20px -20px / auto;
+}
+header a.nitro-btn{
+  width: 70px;
+  height: 30px;
+  background-color: #000000a4;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--back-color);
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+}
+header a.nitro-btn span.icon{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 5px 0;
+  background: url('../../img/20x20.svg') no-repeat -60px -20px / auto;
+}
+header a.setting-btn{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000000a4;
+}
+header a.setting-btn span.back{
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin:  5px auto;
+  background: url('../../img/20x20.svg') no-repeat -40px -20px / auto;
+}
+/* main */
+main{
+  padding: 0 16px;
+}
+main section{
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+main section.white-back{
+  background-color: #fff;
+}
+main section a.sec-box{
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main section a.sec-box h2{
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.44px;
+  color: var(--txt2-color);
+}
+main section a.sec-box span.icon{
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+/* section - profile */
+section.profile{
+  position: relative;
+  margin-top: -44px;
+}
+section.profile .profile-img-state{
+  display: flex;
+  gap: 6px;
+}
+section.profile .profile-img-state span.profile-img{
+  display: block;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 5px solid var(--back-color);
+  position: relative;
+}
+section.profile .profile-img-state span.profile-img img{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+section.profile .profile-img-state span.profile-img span.state{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  background-color: var(--active-color);
+  border: 3px solid var(--back-color);
+}
+section.profile .profile-img-state a.add-btn{
+  width: 118px;
+  height: 32px;
+  background-color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 18px;
+  margin-top: 36px;
+  position: relative;
+}
+section.profile .profile-img-state a.add-btn::after{
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: -20px;
+  left: -3px;
+}
+section.profile .profile-img-state a.add-btn::before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: -8px;
+  left: 10px;
+}
+section.profile .profile-img-state a.add-btn span.icon{
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url('../../img/plus-icon.svg') no-repeat center / auto;
+}
+section.profile .profile-name{
+  margin: 12px 0 24px;
+}
+section.profile .profile-name h2{
+  margin-bottom: 6px;
+}
+section.profile .profile-name h2 span.name{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+}
+section.profile .profile-name h2 span.name img{
+  display: block;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  background: url('../../img/chevron-down.svg') no-repeat center / auto;
+}
+section.profile .profile-name.close h2 span.name img{
+  transform: scaleY(-1);
+}
+section.profile .profile-name h2 span.id{
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+}
+section.profile .profile-name.close h2 span.id{
+  display: none;
+}
+section.profile a.edit-btn{
+  width: 100%;
+  height: 38px;
+  border-radius: 20px;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+section.profile a.edit-btn span.icon{
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url('../../img/20x20.svg') no-repeat -40px -40px / auto;
+}
+
+/* section - shop */
+section.shop{
+  padding: 2px;
+  border-radius: 16px;
+  background: linear-gradient(to bottom, #9945F6, #3243D9);
+}
+section.shop .sec-inner{
+  background-color: #F7F8F9;
+  border-radius: 14px;
+  padding: 16px 14px;
+}
+section.shop .sec-inner .title{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+section.shop .sec-inner .title h2{
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+section.shop .sec-inner .title span.close-btn{
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url('../../img/16x16.svg') no-repeat -32px 0 / auto;
+  cursor: pointer;
+}
+section.shop .sec-inner .btn-box{
+  display: flex;
+  gap: 10px;
+}
+section.shop .sec-inner .btn-box a{
+  flex: 0 1 50%;
+  border-radius: 20px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border: 1px solid var(--border-color);
+}
+section.shop .sec-inner .btn-box a span.icon{
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('../../img/20x20.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+section.shop .sec-inner .btn-box a.nitro span.icon{
+  background-position: -20px -40px;
+}
+section.shop .sec-inner .btn-box a.shop span.icon{
+  background-position: 0 -40px;
+}
+section.shop .sec-inner .btn-box a span.txt{
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  line-height: 1.6rem;
+}
+/* section - start-date */
+section.start-date a.sec-box{
+  flex-direction: column;
+  align-items: start;
+}
+section.start-date a h2{
+  margin-bottom: 8px;
+}
+section.start-date a span.txt{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+section.start-date a span.txt span.icon{
+  display: block;
+  width: 15px;
+  background: url('../../img/dicord-icon.svg') no-repeat center / auto;
+}
+/* section - friends */
+section.friends a span.icon{
+  background: url('../../img/16x16.svg') no-repeat 0 0 / auto;
+}
+/* section - note */
+section.note a span.icon{
+  background: url('../../img/16x16.svg') no-repeat -16px 0 / auto;
+}
