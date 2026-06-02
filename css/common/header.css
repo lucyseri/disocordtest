@@ -77,7 +77,7 @@ header nav ul li.sound span.badge{
   right: -2px;
 }
 header nav ul li:nth-child(3) a{
-  background-color: #222;;
+  background: url('../../img/profile3.png') no-repeat center / cover;
   border-radius: 50%;
 }
 header nav ul li:nth-child(4) a{
@@ -85,5 +85,4 @@ header nav ul li:nth-child(4) a{
 }
 header nav ul li:nth-child(5) a{
   background: url('../../img/45x45.svg') no-repeat right bottom / auto;
-
 }

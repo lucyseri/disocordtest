@@ -43,7 +43,7 @@
   background: url("../../img/notice.svg") no-repeat center / cover;
 }
 #tabBar-include ul li:nth-child(3) a span.menu-img{
-  background-color: #222;
+  background: url('../../img/profile3.png') no-repeat center / cover;
   border-radius: 50%;
 }
 #tabBar-include ul li.alarm a span.menu-img span.state{
