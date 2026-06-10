@@ -9,7 +9,6 @@ $('#tabBar-include').load('html/tabBar.html',function(){
 //header
 $('#header-include').load('html/header.html', function(){
   $('header ul li:first-child').addClass('active');
-  $('header ul li:first-child a').css("background", "url('../../img/45x45.svg') no-repeat left top / auto");
   $('header ul li:nth-child(3)').addClass('alarm');
   $('header ul li:nth-child(3) span.badge').text('1');
 });

@@ -28,6 +28,9 @@ header nav ul span.bar{
   background-color: #d1d3d5;
   margin: 8px auto;
 }
+header nav ul li.active a{
+  background: url('../../img/45x45.svg') no-repeat left top / auto;
+}
 header nav ul li.active::before{
   content: '';
   display: block;
