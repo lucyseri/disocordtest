@@ -71,18 +71,18 @@ header nav ul li.sound span.badge{
   display: block;
   width: 20px;
   height: 20px;
-  background: url('../img/sound.svg') no-repeat center / auto;
+  background: url('../../img/sound.svg') no-repeat center / auto;
   position: absolute;
   top: -2px;
   right: -2px;
 }
 header nav ul li:nth-child(3) a{
-  background: url('../img/profile3.png') no-repeat center / cover;
+  background: url('../../img/profile3.png') no-repeat center / cover;
   border-radius: 50%;
 }
 header nav ul li:nth-child(4) a{
-  background: url('../img/45x45.svg') no-repeat 0 -45px / auto;
+  background: url('../../img/45x45.svg') no-repeat 0 -45px / auto;
 }
 header nav ul li:nth-child(5) a{
-  background: url('../img/45x45.svg') no-repeat right bottom / auto;
+  background: url('../../img/45x45.svg') no-repeat right bottom / auto;
 }
