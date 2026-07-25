@@ -133,13 +133,17 @@ section h2 span.icon{
   height: 20px;
   background: url('../../img/home-icon.svg') no-repeat left top / auto;
 }
-section h2 span.down-arrow{
+section h2 button.down-arrow{
   display: block;
   width: 12px;
   height: 12px;
   background: url('../../img/chevron-down.svg') no-repeat center / 100%;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  border: 0;
 }
-section h2.toggle-menu span.down-arrow{
+section h2.toggle-menu button.down-arrow{
   transform: scaleY(-1);
 }
 section ul.toggle-menu{

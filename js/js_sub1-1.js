@@ -9,7 +9,7 @@ $('#header-include').load('html/header.html', function(){
   $('header ul li:nth-child(3) a').css("borderRadius", "14px");
 });
 //main
-$('section.slide-menu h2').click(function(){
-  $(this).toggleClass('toggle-menu');
-  $(this).siblings().toggleClass('toggle-menu');
+$('section.slide-menu h2 button.down-arrow').click(function(){
+  $(this).parent().toggleClass('toggle-menu');
+  $(this).parent().siblings().toggleClass('toggle-menu');
 });
